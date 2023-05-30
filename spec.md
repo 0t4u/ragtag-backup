@@ -24,9 +24,18 @@ dir/
 |  ├─ UCdn5BQ06XqgXoAxIhbqw5Rg.torrent
 ```
 
-## Command line
-todo
+## Lists database
+
+```json
+[
+    {
+        "c": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+        "v": "gekKWg0yoOE",
+        "u": "2021-08-15T02.30.45Z",
+    }
+]
+```
 
 ## Downloading
 - FIFO queue via https://github.com/enriquebris/goconcurrentqueue
-- goroutine bullshit
+- goroutine stuff ig?

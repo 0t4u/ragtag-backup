@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
 	"github.com/rs/zerolog/log"
@@ -13,7 +14,14 @@ import (
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	// rootCmd.PersistentFlags().String()
+	cwd, err := os.Getwd()
+
+	// lol
+	if err != nil {
+		log.Fatal().Msg("Could not run current working directory.")
+	}
+
+	rootCmd.PersistentFlags().String("path", cwd, "Specify directory to store files.")
 }
 
 func initConfig() {

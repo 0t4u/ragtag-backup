@@ -7,6 +7,8 @@ require (
 	github.com/google/go-querystring v1.1.0
 )
 
+require github.com/ybbus/httpretry v1.0.2 // indirect
+
 require (
 	github.com/c2fo/vfs/v6 v6.6.0 // indirect
 	github.com/cavaliergopher/grab/v3 v3.0.1 // indirect

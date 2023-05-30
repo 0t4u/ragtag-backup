@@ -7,5 +7,7 @@ func init() {
 }
 
 var versionCmd = &cobra.Command{
-	Use: "version",
+	Use:   "version",
+	Short: "Get the version of rtb",
+	Long:  "Get the version of the locally installed rtb binary",
 }
